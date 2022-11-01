@@ -9,5 +9,5 @@ Chess::Chess()
 }
 Chess::~Chess()
 {
-    cout << "Object Deleted" << endl;
+    cout << "Object Deleted realyl" << endl;
 }
