@@ -17,11 +17,13 @@
 class Chess
 {
 private:
-    bool gameon;
-    bool moveturn;
     char board[8][8];
+    bool whiteturn;
 public:
+    bool gameon;
+    bool move(int* current, int* future);
     Chess();
     ~Chess();
+    char getPiceAtPosition(int row, int spot);
 };
 

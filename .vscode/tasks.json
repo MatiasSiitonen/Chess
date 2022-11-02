@@ -9,7 +9,7 @@
                 "-std=c++20",
                 "D:\\c++koodailut\\chess\\scr\\*.cpp",
                 "-o",
-                "D:\\c++koodailut\\chess\\scr\\output.exe"
+                "D:\\c++koodailut\\chess\\scr\\chess.exe"
             ],
             "options": {
                 "cwd": "${fileDirname}"
