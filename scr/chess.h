@@ -1,4 +1,12 @@
 #pragma once
+#include <vector>
+using namespace std;
+
+struct position
+{
+    int row;
+    int line;
+};
 
  const char start_board[8][8] =
    {
@@ -19,11 +27,16 @@ class Chess
 private:
     char board[8][8];
     bool whiteturn;
+    bool valid_move(int* current, int* future);
 public:
     bool gameon;
-    bool move(int* current, int* future);
     Chess();
     ~Chess();
     char getPiceAtPosition(int row, int spot);
+
+    vector<position> moves_king(int* current, bool black);
+    vector<position> moves_pawn(int* current, bool black);
+    bool move(int* current, int* future);
+
 };
 
